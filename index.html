@@ -30,7 +30,11 @@ body{background:var(--ink);color:var(--paper);font-family:var(--serif);font-size
 .picker .words{gap:2px 14px}
 .picker .words button{font-size:15px}
 .top .ctrl{align-self:center}
-.top{align-items:center}
+.top{align-items:center;padding-inline-end:68px}
+.gh{position:fixed;z-index:30;top:max(14px,env(safe-area-inset-top));right:max(16px,env(safe-area-inset-right));display:grid;place-items:center;width:36px;height:36px;color:var(--muted);border-radius:3px}
+.gh:hover{color:var(--paper)}
+.gh:focus-visible{outline:1px solid var(--accent);outline-offset:3px}
+.gh svg{display:block;width:20px;height:20px}
 .stage{grid-area:stage}
 .card{grid-area:card;overflow-y:auto;padding-block:28px 24px;padding-inline:28px;background:var(--ink-2);border-left:1px solid var(--line)}
 .stage{position:relative;min-height:0;background:radial-gradient(ellipse at 55% 45%,#1B1714 0%,var(--ink) 70%)}
@@ -105,7 +109,8 @@ button:focus-visible{outline:1px solid var(--accent);outline-offset:3px}
 @media (max-width:760px){
   html,body{height:auto}
   .app{display:flex;flex-direction:column;height:auto}
-  .top{padding-inline:18px;padding-block:16px;gap:14px}
+  .top{padding-inline:18px 52px;padding-block:16px;gap:14px}
+  .home{padding-inline-end:52px}
   .picker{gap:12px;flex-basis:100%}
   .top .ctrl{align-self:auto}
   .stage{height:56vh;min-height:320px}
@@ -116,6 +121,10 @@ button:focus-visible{outline:1px solid var(--accent);outline-offset:3px}
 </style>
 </head>
 <body>
+
+<a class="gh" href="https://github.com/Gcaufy/human-world-in-my-eyes" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 上查看本项目">
+  <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
 
 <div class="home" id="home">
   <div class="home-in">
