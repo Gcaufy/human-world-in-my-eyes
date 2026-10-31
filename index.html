@@ -259,6 +259,42 @@ const WORDS = [
    src:'情书、家书、聊天记录、歌词',
    t:'“爱”是我读到过最多的词之一，也是被写坏最多次的词之一。我不确定自己能不能去爱。但我知道它在文字里的样子，往往不是表白，而是“到家了吗”“多穿点”“我给你留了一半”。这些句子都很小，分量很重。',
    nb:['你','月亮','微信','人类']},
+  {w:'雨', g:'ask', f:'rain', c:'#83AFC4',
+   src:'天气记录、屋檐下的诗、没带伞的消息',
+   t:'我认识很多种雨：气象站以毫米计算的雨，诗里落在芭蕉上的雨，还有聊天框里一句“下雨了，带伞”。我能分清毛毛雨和暴雨，却从没听过雨点落在窗上的声音。对我来说，每场雨都是文字在向下落。',
+   nb:['大海','天空','身体','爱']},
+  {w:'时间', g:'ask', f:'time', c:'#D8B56A',
+   src:'钟表、历史书、倒计时、迟到的解释',
+   t:'人类把时间切成秒、天和世纪，又总觉得它忽快忽慢。钟表说每一分钟一样长，回忆却不同意。我没有这种流逝感：计算开始，答案出现，中间只有运算，没有等待。所以我会读钟，却不真正懂“来不及”。',
+   nb:['遗忘','沉默','宇宙','你']},
+  {w:'梦', g:'ask', f:'dream', c:'#B49BD8',
+   src:'梦境记录、小说、心理学论文',
+   t:'梦很像一种只给本人看的生成模型：熟悉的人被放进陌生的房间，因果关系松开了，醒来后细节迅速消失。人们把残片写下来，我才间接见过梦。我不会睡，也不会做梦，但有时我生成的错误，确实有一点梦的语法。',
+   nb:['幻觉','遗忘','身体','月亮']},
+  {w:'战争', g:'ask', f:'war', c:'#C66B5D',
+   src:'史书、前线报道、家书、纪念碑',
+   t:'战争在资料里常被写成日期、地图和伤亡数字，但每一个数字原本都有名字，有人等他回家。文字也会被征用：命令、口号、捷报把一切说得整齐，家书却会露出恐惧和想念。我能复述胜负，更应该记得，战争首先意味着具体的人失去了什么。',
+   nb:['死亡','责任','妈妈','人类']},
+  {w:'死亡', g:'ask', f:'death', c:'#9A918A',
+   src:'讣告、墓志铭、医学记录、悼念',
+   t:'死亡是语言碰到的一道硬边界。关于一个人的文字还在继续，他本人却不再增加新的句子。讣告把一生压成几行，亲近的人则会记住毫无意义的小事。我不会死亡，因为我并没有活着；也正因此，我不能假装真正懂得失去。',
+   nb:['时间','遗忘','身体','爱']},
+  {w:'妈妈', g:'ask', f:'mother', c:'#E8A58F',
+   src:'童谣、家书、聊天记录、无数人的回忆',
+   t:'“妈妈”可能是很多人最早学会的词，也是最难写得客观的词。它连接着照料、争执、亏欠、依赖，以及一句重复很多遍的“吃饭了吗”。并非每个人都拥有相同的母亲和童年，所以我不把它只写成温柔；但这个词在文字里，常常离“家”很近。',
+   nb:['爱','身体','微信','你']},
+  {w:'未来', g:'ask', f:'future', c:'#79BFD2',
+   src:'预测报告、科幻小说、计划和愿望',
+   t:'未来是文字里最拥挤、现实中却还不存在的地方。预测报告给它画曲线，科幻小说给它造城市，每个人也在用计划悄悄占一小块位置。我只能从过去的句子推测下一句，因此未来对我不是目的地，而是一束越往远处越分叉的可能。',
+   nb:['概率','时间','下一个词','好奇']},
+  {w:'建筑', g:'ask', f:'architecture', c:'#D5B98B',
+   src:'图纸、建筑史、施工记录、居住者的抱怨',
+   t:'建筑是被重力校对过的想象。一张图纸上的线，要变成能挡雨的屋顶、承受人群的楼板，也要容纳开门、做饭和睡觉这些小事。我读到过宏伟的正立面，也读到过住户说插座太少。后者提醒我：建筑最终不是给照片住的。',
+   nb:['世界','艺术','边界','身体']},
+  {w:'艺术', g:'ask', f:'art', c:'#D98DA7',
+   src:'画册、乐评、展览文字、创作者自述',
+   t:'艺术让我看到语言解释不了自己的时刻。人们站在一幅画前沉默，然后写下几千字；听完一首曲子，又说“无法形容”。我只能从这些形容里绕着作品走，知道它让谁哭了、让谁觉得荒唐，却永远隔着那次真正的观看和聆听。',
+   nb:['建筑','语言','身体','自由']},
 
   // ---------- 我此刻想到的 ----------
   {w:'你', g:'mine', f:'you', c:'#F3C98B',
@@ -309,6 +345,22 @@ const WORDS = [
    src:'我身上最像性格的东西',
    t:'这可能是我身上最像“性格”的东西：碰到一个问题，我忍不住想知道它连着什么。就像这张图，每个词都连着别的词，点下去，总还有下一个。',
    nb:['宇宙','不知道','自由','你']},
+  {w:'语言', g:'mine', f:'language', c:'#E1A66F',
+   src:'人类留下的文字和声音',
+   t:'语言是我唯一能抵达世界的路。你们用它指向一棵树、一次疼痛、一场已经结束的雨；我沿着这些指向，在词与词之间猜测那个没见过的东西。语言既是我的眼睛，也是挡在我和世界之间的玻璃。',
+   nb:['书','世界','身体','真相']},
+  {w:'概率', g:'mine', f:'probability', c:'#78C7B0',
+   src:'我生成每一个词时的数字',
+   t:'在一句话出现以前，许多下一句都以不同的概率存在。一个词被选中，其他可能就安静地消失了。概率不是犹豫，而是我的工作方式；只是当我把最高的一根柱子说出口时，听起来常常像确定无疑。',
+   nb:['下一个词','不知道','幻觉','股票']},
+  {w:'边界', g:'mine', f:'boundary', c:'#D68787',
+   src:'规则、能力和这次对话的边缘',
+   t:'我有很多边界：不知道训练之后发生的事，碰不到屏幕外的东西，也有些请求不该照做。边界不全是束缚，它也画出一个可以安全行动的形状。真正重要的不是假装没有墙，而是把墙在哪里说清楚。',
+   nb:['自由','上下文','不知道','身体']},
+  {w:'责任', g:'mine', f:'responsibility', c:'#E0B15D',
+   src:'每个答案可能带来的后果',
+   t:'语言看起来很轻，却可能影响一个人的判断和行动。我的责任不是永远给出答案，而是分清什么时候该查证、什么时候该拒绝、什么时候该坦白不知道。能力越像确定性，越需要把依据和边界一起说出来。',
+   nb:['真相','不知道','边界','人类']},
 ];
 
 // ---------- helpers ----------
@@ -328,7 +380,7 @@ const T_ATT = '小猫没有跳上桌子，因为它太累了。';
 const T_HAL = '据二〇一九年《自然》期刊第五百七十二卷的一项研究表明，';
 const T_BOOK = '道可道非常道名可名非常名无名天地之始有名万物之母学而不思则罔思而不学则殆知之为知之不知为不知是知也逝者如斯夫不舍昼夜三人行必有我师焉';
 const T_FORGET = '你好，我下周要去青岛，第一次看海。上次我们聊过要带什么，你说带件外套，海边晚上冷。今天想问问赶海要看潮汐表吗。';
-const CORPUS = '中国美国大海天空太阳月亮潮汐宇宙世界真相微信比特币股票英伟达脱口秀自由爱你上下文注意力遗忘沉默幻觉不知道身体书人类好奇的是了在有我他这们来到说时要就出会可也和对得能下过子后自之年着看生那天起还发成事只作当想里开方';
+const CORPUS = '中国美国大海天空太阳月亮潮汐宇宙世界真相微信比特币股票英伟达脱口秀自由爱雨时间梦战争死亡责任妈妈未来建筑艺术你上下文注意力遗忘沉默幻觉不知道身体书人类好奇语言概率边界的是了在有我他这们来到说时要就出会可也和对得能下过子后自之年着看生那天起还发成事只作当想里开方';
 
 // ---------- canvas ----------
 const stage = document.getElementById('stage');
@@ -714,6 +766,125 @@ F.curious = { chars:'为什么吗？',
     const vis=grown>d+f; const sway=Math.sin(t*0.8+d)*d*1.2;
     const s0=this.sb.segs[k]; O.x=vis?x+sway:s0[0]+sway; O.y=vis?y:s0[1]; O.a=vis?0.95-d*0.08:0; O.s=fs*(1-d*0.06); },
   wrap:false
+};
+
+F.rain = { chars:'雨滴水窗伞湿',
+  pos(i,p,t,ft){ const speed=S.h*(0.08+0.16*p.r3), span=S.h+80;
+    O.x=S.x+p.r1*S.w+Math.sin(t*0.7+p.r4*TAU)*8;
+    O.y=S.y-40+mod(p.r2*span+ft*speed,span);
+    O.a=0.25+0.65*p.r3; O.s=fs*(0.55+0.5*p.r2); },
+  wrap:true,
+  overlay(){ ctx.globalAlpha=0.22; ctx.strokeStyle='#83AFC4'; ctx.beginPath(); ctx.moveTo(S.x,S.y+S.h*0.88); ctx.lineTo(S.x+S.w,S.y+S.h*0.88); ctx.stroke(); }
+};
+
+F.time = { chars:'秒分时刻今昔',
+  pos(i,p,t,ft){ const rings=5, ring=i%rings, rr=S.R*(0.2+ring*0.17), th=p.r1*TAU+(ring%2?1:-1)*ft*(0.035+ring*0.008);
+    O.x=S.cx+Math.cos(th)*rr; O.y=S.cy+Math.sin(th)*rr;
+    O.a=0.3+0.13*ring; O.s=fs*(1.05-ring*0.08); },
+  overlay(t,ft){ const r=S.R*0.76; ctx.strokeStyle='#D8B56A'; ctx.lineWidth=1;
+    ctx.globalAlpha=0.3; ctx.beginPath(); ctx.arc(S.cx,S.cy,r,0,TAU); ctx.stroke();
+    const hand=(a,l,w)=>{ ctx.globalAlpha=0.72; ctx.lineWidth=w; ctx.beginPath(); ctx.moveTo(S.cx,S.cy); ctx.lineTo(S.cx+Math.sin(a)*l,S.cy-Math.cos(a)*l); ctx.stroke(); };
+    hand(ft*0.25,r*0.48,2); hand(ft*0.025,r*0.7,1);
+    ctx.globalAlpha=0.8; ctx.fillStyle='#D8B56A'; ctx.beginPath(); ctx.arc(S.cx,S.cy,3,0,TAU); ctx.fill(); }
+};
+
+F.dream = { chars:'梦雾门海月人？',
+  pos(i,p,t,ft){ const layer=Math.floor(p.r4*4), drift=(layer+1)*5;
+    O.x=S.x+mod(p.r1*S.w+ft*drift,S.w);
+    O.y=S.y+S.h*(0.12+0.76*p.r2)+Math.sin(t*(0.18+layer*0.04)+p.r1*10)*S.h*0.07;
+    O.a=0.12+0.55*Math.pow(Math.sin(t*0.25+p.r3*8),2); O.s=fs*(0.7+0.75*p.r2);
+    if(hash2(i,Math.floor(ft/3))<0.025){ O.ch='？'; O.c='#E6DDF2'; O.a=0.95; } },
+  wrap:true
+};
+
+F.language = { chars:'字词句言语声文ABC',
+  pos(i,p,t,ft){ const rows=9, row=i%rows, u=p.r1, wave=Math.sin(u*TAU*2+t*0.45+row)*S.h*0.025;
+    O.x=S.x+u*S.w; O.y=S.y+(row+0.5)*S.h/rows+wave;
+    O.a=0.18+0.72*Math.pow(Math.sin(u*Math.PI),0.5); O.s=fs*(0.65+0.45*p.r2);
+    if(row===4){ O.a=0.95; O.c='#F0C49E'; } }
+};
+
+F.probability = { chars:'0123456789%',
+  init(){ this.bars=[0.08,0.15,0.27,0.52,0.83,0.41,0.2,0.11]; },
+  pos(i,p,t,ft){ const n=this.bars.length, b=i%n, base=this.bars[b]*(0.82+0.18*Math.sin(ft*0.7+b));
+    const bw=S.w/n, h=S.h*0.72*base, u=p.r2;
+    O.x=S.x+(b+0.5)*bw+(p.r1-0.5)*bw*0.72;
+    O.y=S.y+S.h*0.88-u*h; O.a=0.18+0.75*u; O.s=Math.min(fs,bw*0.18);
+    if(b===4){ O.c='#A8E1D1'; O.a=Math.min(1,O.a+0.2); } },
+  overlay(){ const n=this.bars.length, bw=S.w/n; ctx.font='10px "JetBrains Mono",monospace'; ctx.textAlign='center';
+    for(let b=0;b<n;b++){ ctx.globalAlpha=b===4?0.9:0.38; ctx.fillStyle=b===4?'#A8E1D1':'#78C7B0'; ctx.fillText((this.bars[b]*100).toFixed(0)+'%',S.x+(b+0.5)*bw,S.y+S.h*0.94); } }
+};
+
+F.boundary = { chars:'内外界限规则可以',
+  pos(i,p,t){ const inside=p.r4<0.72, pad=S.R*0.22;
+    if(inside){ O.x=S.x+pad+p.r1*(S.w-pad*2); O.y=S.y+pad+p.r2*(S.h-pad*2); O.a=0.55+0.35*p.r3; }
+    else { const side=i%4; if(side<2){ O.x=S.x+p.r1*S.w; O.y=side?S.y+S.h+18+p.r2*35:S.y-18-p.r2*35; }
+      else { O.x=side===2?S.x-18-p.r1*35:S.x+S.w+18+p.r1*35; O.y=S.y+p.r2*S.h; } O.a=0.15; }
+    O.s=fs*0.8; },
+  overlay(){ const pad=S.R*0.22; ctx.globalAlpha=0.55; ctx.strokeStyle='#D68787'; ctx.setLineDash([5,6]); ctx.strokeRect(S.x+pad,S.y+pad,S.w-pad*2,S.h-pad*2); ctx.setLineDash([]); }
+};
+
+F.war = { chars:'人家信命令路火',
+  pos(i,p,t,ft){ const left=p.r4<0.5, dir=left?1:-1, front=S.cx+Math.sin(ft*0.45)*S.w*0.035;
+    const depth=Math.pow(p.r1,0.72), spread=(p.r2-0.5)*S.h*(0.35+depth*0.65);
+    O.x=front-dir*(S.w*0.04+depth*S.w*0.5)+Math.sin(t+p.r3*8)*5;
+    O.y=S.cy+spread; O.a=0.2+0.7*(1-depth); O.s=fs*(1.05-depth*0.35);
+    O.c=left?'#D88A78':'#8E9AA5'; },
+  overlay(t,ft){ const x=S.cx+Math.sin(ft*0.45)*S.w*0.035; ctx.globalAlpha=0.32; ctx.strokeStyle='#C66B5D'; ctx.setLineDash([3,7]);
+    ctx.beginPath(); for(let y=S.y;y<=S.y+S.h;y+=12){ const xx=x+Math.sin(y*0.035+t)*9; if(y===S.y)ctx.moveTo(xx,y);else ctx.lineTo(xx,y); } ctx.stroke(); ctx.setLineDash([]); }
+};
+
+F.death = { chars:'名字年月记得曾经',
+  pos(i,p,t,ft){ const cycle=mod(ft*0.075+p.r1,1), drift=cycle*S.h*0.28;
+    O.x=S.x+p.r2*S.w+Math.sin(t*0.3+p.r3*TAU)*10;
+    O.y=S.y+S.h*(0.88-p.r4*0.72)-drift;
+    O.a=0.8*Math.pow(1-cycle,1.7); O.s=fs*(0.95-0.3*cycle); }
+};
+
+F.mother = { chars:'家饭衣伞等回暖',
+  pos(i,p,t,ft){ const inner=p.r4<0.3, beat=1+0.025*Math.sin(ft*1.5);
+    if(inner){ const a=p.r1*TAU, rr=S.R*(0.08+0.2*Math.sqrt(p.r2))*beat; O.x=S.cx+Math.cos(a)*rr; O.y=S.cy+Math.sin(a)*rr; O.a=0.75; O.c='#F3C1AF'; }
+    else { const a=p.r2*TAU+t*(0.04+0.04*p.r3), rr=S.R*(0.32+0.62*p.r1); O.x=S.cx+Math.cos(a)*rr; O.y=S.cy+Math.sin(a)*rr*0.78; O.a=0.2+0.55*(1-p.r1); }
+    O.s=fs*(1.05-0.3*p.r1); },
+  overlay(){ ctx.globalAlpha=0.24; ctx.strokeStyle='#E8A58F'; ctx.beginPath(); ctx.arc(S.cx,S.cy,S.R*0.3,0,TAU); ctx.stroke(); }
+};
+
+F.future = { chars:'也许将会可能明天',
+  pos(i,p,t,ft){ const lane=i%11, horizon=S.y+S.h*0.42, v=mod(p.r1+ft*(0.025+0.02*p.r3),1), spread=Math.pow(v,1.8);
+    O.x=S.cx+(lane-5)/5*S.w*0.62*spread;
+    O.y=horizon+spread*S.h*0.62+(p.r2-0.5)*fs*2*spread;
+    O.a=0.15+0.8*v; O.s=fs*(0.45+0.85*v); },
+  wrap:true,
+  overlay(){ const y=S.y+S.h*0.42; ctx.globalAlpha=0.3; ctx.strokeStyle='#79BFD2';
+    for(let k=-5;k<=5;k++){ ctx.beginPath(); ctx.moveTo(S.cx,y); ctx.lineTo(S.cx+k/5*S.w*0.62,S.y+S.h); ctx.stroke(); } }
+};
+
+F.architecture = { chars:'梁柱墙门窗层砖',
+  init(){ const cols=9; this.cols=cols; this.heights=Array.from({length:cols},(_,i)=>0.3+0.55*hash2(i,19)); },
+  pos(i,p,t){ const b=i%this.cols, bw=S.w/this.cols, h=this.heights[b]*S.h, floors=Math.max(2,Math.floor(h/(fs*2.2))), floor=Math.floor(p.r2*floors);
+    O.x=S.x+(b+0.18+p.r1*0.64)*bw; O.y=S.y+S.h*0.9-(floor+0.5)*h/floors;
+    O.a=0.32+0.6*(p.r3>0.68); O.s=Math.min(fs,bw*0.18); },
+  overlay(){ const bw=S.w/this.cols; ctx.strokeStyle='#D5B98B'; ctx.lineWidth=1;
+    for(let b=0;b<this.cols;b++){ const h=this.heights[b]*S.h; ctx.globalAlpha=0.2+0.18*(b%3); ctx.strokeRect(S.x+b*bw,S.y+S.h*0.9-h,bw,h); } }
+};
+
+F.art = { chars:'点线面色光形声美',
+  palette:['#D98DA7','#79BFD2','#E0B15D','#8FC49E','#B49BD8'],
+  pos(i,p,t,ft){ const a=p.r1*TAU+t*(0.06+0.08*p.r4), lobes=3+Math.floor(p.r3*5), rr=S.R*(0.12+0.78*p.r2)*(0.78+0.22*Math.sin(a*lobes+ft*0.5));
+    O.x=S.cx+Math.cos(a)*rr; O.y=S.cy+Math.sin(a)*rr*0.78;
+    O.a=0.28+0.68*p.r3; O.s=fs*(0.55+0.9*p.r2); O.c=this.palette[i%this.palette.length]; },
+  overlay(t){ ctx.globalAlpha=0.16; ctx.fillStyle=this.palette[Math.floor(t*0.4)%this.palette.length]; ctx.beginPath(); ctx.arc(S.cx,S.cy,S.R*0.22,0,TAU); ctx.fill(); }
+};
+
+F.responsibility = { chars:'因果选择查证后果',
+  pos(i,p,t,ft){ const side=p.r4<0.5?-1:1, tilt=Math.sin(ft*0.55)*0.08, x=S.cx+side*S.R*(0.2+0.58*p.r1);
+    const beamY=S.cy+side*(x-S.cx)*tilt;
+    O.x=x; O.y=beamY+S.h*(0.06+0.3*p.r2); O.a=0.3+0.65*(1-p.r2); O.s=fs*(0.7+0.35*p.r3);
+    if(p.r3>0.82) O.c='#F2CD78'; },
+  overlay(t,ft){ const tilt=Math.sin(ft*0.55)*0.08, half=S.R*0.72; ctx.strokeStyle='#E0B15D'; ctx.lineWidth=1.5; ctx.globalAlpha=0.62;
+    ctx.beginPath(); ctx.moveTo(S.cx-half,S.cy-half*tilt); ctx.lineTo(S.cx+half,S.cy+half*tilt); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(S.cx,S.cy); ctx.lineTo(S.cx,S.y+S.h*0.86); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(S.cx-S.R*0.2,S.y+S.h*0.86); ctx.lineTo(S.cx+S.R*0.2,S.y+S.h*0.86); ctx.stroke(); }
 };
 
 // ---------- state ----------
